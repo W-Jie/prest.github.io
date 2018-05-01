@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Custom middlewares on Documentation for pREST</title>
+    <link>https://postgres.rest/prest-as-web-framework/custom-middlewares/</link>
+    <description>Recent content in Custom middlewares on Documentation for pREST</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 Feb 2017 16:05:05 -0300</lastBuildDate>
+    
+	<atom:link href="https://postgres.rest/prest-as-web-framework/custom-middlewares/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Disable JWT Middleware</title>
+      <link>https://postgres.rest/prest-as-web-framework/custom-middlewares/disable-jwt/</link>
+      <pubDate>Tue, 28 Feb 2017 16:05:05 -0300</pubDate>
+      
+      <guid>https://postgres.rest/prest-as-web-framework/custom-middlewares/disable-jwt/</guid>
+      <description>Using pREST as framework is common to need to do endpoint for authentication, and that endpoint cannot ask for JWT (header) because it will generate the token.
+Create sub routes without JWT? package main import ( &amp;quot;encoding/json&amp;quot; &amp;quot;fmt&amp;quot; &amp;quot;net/http&amp;quot; &amp;quot;time&amp;quot; jwt &amp;quot;github.com/dgrijalva/jwt-go&amp;quot; &amp;quot;github.com/gorilla/mux&amp;quot; &amp;quot;github.com/prest/adapters/postgres&amp;quot; &amp;quot;github.com/prest/cmd&amp;quot; &amp;quot;github.com/prest/config&amp;quot; &amp;quot;github.com/prest/config/router&amp;quot; &amp;quot;github.com/prest/middlewares&amp;quot; &amp;quot;github.com/urfave/negroni&amp;quot; ) const authPrefix = &amp;quot;/auth&amp;quot; // Body data structure used to receive request type Body struct { Username string Password string } // Auth data structure used to return authentication token type Auth struct { Token string } func main() { // start pREST config config.</description>
+    </item>
+    
+  </channel>
+</rss>

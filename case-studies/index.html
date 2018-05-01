@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.41-DEV" />
+    <meta name="description" content="A fully RESTful API from any existing PostgreSQL database.">
+
+
+    <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
+<link rel="icon" href="/logo.png" type="image/x-icon" />
+
+    <title>Case studies :: Documentation for pREST</title>
+    
+    
+    <link href="/css/nucleus.css?1525187371" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1525187371" rel="stylesheet">
+    <link href="/css/hybrid.css?1525187371" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1525187371" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1525187371" rel="stylesheet">
+    <link href="/css/auto-complete.css?1525187371" rel="stylesheet">
+    <link href="/css/theme.css?1525187371" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1525187371" rel="stylesheet">
+    
+
+    <script src="/js/jquery-2.x.min.js?1525187371"></script>
+    
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{ 
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/case-studies/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+  <img
+    src="/logo.png"
+    alt="pREST logo" /><br />
+  <b>pREST</b>
+</a>
+<p>
+  
+
+  <iframe src="https://ghbtns.com/github-btn.html?user=prest&repo=prest&type=watch&count=true&size=large"
+	  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+
+  <a href="https://travis-ci.org/prest/prest">
+    <img
+      alt="https://secure.travis-ci.org/prest/prest.svg?branch=master"
+      src="https://secure.travis-ci.org/prest/prest.svg?branch=master"/>
+  </a>
+
+  <a href="https://codecov.io/github/prest/prest">
+    <img
+      alt="https://codecov.io/github/prest/prest/coverage.svg?branch=master"
+      src="https://codecov.io/github/prest/prest/coverage.svg?branch=master"/>
+  </a>
+</p>
+<p>A fully RESTful API from any existing PostgreSQL database.</p>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fa fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="Search...">
+    <span data-search-clear=""><i class="fa fa-close"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1525187371"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1525187371"></script>
+<script type="text/javascript">
+    
+        var baseurl = '\/';
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1525187371"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/getting-started/" title="Getting Started" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/getting-started/">
+          Getting Started
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/installation/" title="Installation" class="dd-item ">
+        <a href="/getting-started/installation/">
+        Installation
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/running/" title="Running" class="dd-item ">
+        <a href="/getting-started/running/">
+        Running
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/new-database/" title="New database" class="dd-item ">
+        <a href="/getting-started/new-database/">
+        New database
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/already-have-db/" title="Pre-existing database" class="dd-item ">
+        <a href="/getting-started/already-have-db/">
+        Pre-existing database
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/configurations/" title="Configurations" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/configurations/">
+          Configurations
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/query-statements/" title="Query Statements" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/query-statements/">
+          Query Statements
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/permissions/" title="Permissions" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/permissions/">
+          Permissions
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/executing-sql-scripts/" title="Executing SQL Scripts" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/executing-sql-scripts/">
+          Executing SQL Scripts
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/cors-support/" title="CORS Support" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/cors-support/">
+          CORS Support
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/case-studies/" title="Case studies" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/case-studies/">
+          Case studies
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/prest-as-web-framework/" title="Extending (framework)" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/prest-as-web-framework/">
+          Extending (framework)
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/prest-as-web-framework/custom-middlewares/" title="Custom middlewares" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/prest-as-web-framework/custom-middlewares/">
+          Custom middlewares
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/prest-as-web-framework/custom-middlewares/disable-jwt/" title="Disable JWT Middleware" class="dd-item ">
+        <a href="/prest-as-web-framework/custom-middlewares/disable-jwt/">
+        Disable JWT Middleware
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/contribute/" title="Contribute" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/contribute/">
+          Contribute
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/roadmap/" title="Roadmap" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/roadmap/">
+          Roadmap
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+       
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fa fa-fw fa-history"></i> Clear History</a></li>         
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fa fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/prest/prest.github.io/tree/gh-pages/contentcase-studies/_index.en.md" target="blank">
+                      <i class="fa fa-code-fork"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            <a href='/'>Welcome</a> > Case studies
+          
+         
+          
+           
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#companies">Companies</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+
+        
+        <div id="body-inner">
+          
+            <h1>Case studies</h1>
+          
+
+        
+
+
+
+
+<p>Company and/or project uses pREST? Describe your use case <a href="https://github.com/prest/prest/issues/new?title=Case%20Studies:%20">here</a>.</p>
+
+<p>These are just a few companies and projects that are using (trusting) pREST.</p>
+
+<h2 id="companies">Companies</h2>
+
+<table>
+<thead>
+<tr>
+<th>Company</th>
+<th>Site</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Nuveo</td>
+<td><a href="https://nuveo.ai/">nuveo.ai</a></td>
+</tr>
+
+<tr>
+<td>Filmow</td>
+<td><a href="https://filmow.com/">filmow.com</a></td>
+</tr>
+
+<tr>
+<td>Levpay</td>
+<td><a href="https://levpay.com/">levpay.com</a></td>
+</tr>
+
+<tr>
+<td>uMov.me</td>
+<td><a href="https://www.umov.me/">umov.me</a></td>
+</tr>
+</tbody>
+</table>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+        
+            <a class="nav nav-prev" href="/cors-support/" title="CORS Support"> <i class="fa fa-chevron-left"></i></a>
+        
+        
+            <a class="nav nav-next" href="/prest-as-web-framework/" title="Extending (framework)" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1525187371"></script>
+    <script src="/js/perfect-scrollbar.min.js?1525187371"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1525187371"></script>
+    <script src="/js/jquery.sticky.js?1525187371"></script>
+    <script src="/js/featherlight.min.js?1525187371"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1525187371"></script>
+    <script src="/js/highlight.pack.js?1525187371"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom.71422.js?1525187371"></script>
+    <script src="/js/learn.js?1525187371"></script>
+    <script src="/js/hugo-learn.js?1525187371"></script>
+
+    <link href="/mermaid/mermaid.css?1525187371" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1525187371"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>

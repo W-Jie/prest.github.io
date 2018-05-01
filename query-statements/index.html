@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.41-DEV" />
+    <meta name="description" content="A fully RESTful API from any existing PostgreSQL database.">
+
+
+    <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
+<link rel="icon" href="/logo.png" type="image/x-icon" />
+
+    <title>Query Statements :: Documentation for pREST</title>
+    
+    
+    <link href="/css/nucleus.css?1525187370" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1525187370" rel="stylesheet">
+    <link href="/css/hybrid.css?1525187370" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1525187370" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1525187370" rel="stylesheet">
+    <link href="/css/auto-complete.css?1525187370" rel="stylesheet">
+    <link href="/css/theme.css?1525187370" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1525187370" rel="stylesheet">
+    
+
+    <script src="/js/jquery-2.x.min.js?1525187370"></script>
+    
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{ 
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/query-statements/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+  <img
+    src="/logo.png"
+    alt="pREST logo" /><br />
+  <b>pREST</b>
+</a>
+<p>
+  
+
+  <iframe src="https://ghbtns.com/github-btn.html?user=prest&repo=prest&type=watch&count=true&size=large"
+	  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+
+  <a href="https://travis-ci.org/prest/prest">
+    <img
+      alt="https://secure.travis-ci.org/prest/prest.svg?branch=master"
+      src="https://secure.travis-ci.org/prest/prest.svg?branch=master"/>
+  </a>
+
+  <a href="https://codecov.io/github/prest/prest">
+    <img
+      alt="https://codecov.io/github/prest/prest/coverage.svg?branch=master"
+      src="https://codecov.io/github/prest/prest/coverage.svg?branch=master"/>
+  </a>
+</p>
+<p>A fully RESTful API from any existing PostgreSQL database.</p>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fa fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="Search...">
+    <span data-search-clear=""><i class="fa fa-close"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1525187370"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1525187370"></script>
+<script type="text/javascript">
+    
+        var baseurl = '\/';
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1525187370"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/getting-started/" title="Getting Started" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/getting-started/">
+          Getting Started
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/installation/" title="Installation" class="dd-item ">
+        <a href="/getting-started/installation/">
+        Installation
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/running/" title="Running" class="dd-item ">
+        <a href="/getting-started/running/">
+        Running
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/new-database/" title="New database" class="dd-item ">
+        <a href="/getting-started/new-database/">
+        New database
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/already-have-db/" title="Pre-existing database" class="dd-item ">
+        <a href="/getting-started/already-have-db/">
+        Pre-existing database
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/configurations/" title="Configurations" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/configurations/">
+          Configurations
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/query-statements/" title="Query Statements" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/query-statements/">
+          Query Statements
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/permissions/" title="Permissions" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/permissions/">
+          Permissions
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/executing-sql-scripts/" title="Executing SQL Scripts" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/executing-sql-scripts/">
+          Executing SQL Scripts
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/cors-support/" title="CORS Support" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/cors-support/">
+          CORS Support
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/case-studies/" title="Case studies" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/case-studies/">
+          Case studies
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/prest-as-web-framework/" title="Extending (framework)" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/prest-as-web-framework/">
+          Extending (framework)
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/prest-as-web-framework/custom-middlewares/" title="Custom middlewares" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/prest-as-web-framework/custom-middlewares/">
+          Custom middlewares
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/prest-as-web-framework/custom-middlewares/disable-jwt/" title="Disable JWT Middleware" class="dd-item ">
+        <a href="/prest-as-web-framework/custom-middlewares/disable-jwt/">
+        Disable JWT Middleware
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/contribute/" title="Contribute" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/contribute/">
+          Contribute
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/roadmap/" title="Roadmap" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/roadmap/">
+          Roadmap
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+       
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fa fa-fw fa-history"></i> Clear History</a></li>         
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fa fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/prest/prest.github.io/tree/gh-pages/contentquery-statements/_index.en.md" target="blank">
+                      <i class="fa fa-code-fork"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            <a href='/'>Welcome</a> > Query Statements
+          
+         
+          
+           
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#filter-where">Filter (WHERE)</a></li>
+<li><a href="#filter-where-with-jsonb-field">Filter (WHERE) with JSONb field</a></li>
+<li><a href="#select-get">Select - GET</a></li>
+<li><a href="#insert-post">Insert - POST</a></li>
+<li><a href="#update-patch-put">Update - PATCH/PUT</a></li>
+<li><a href="#delete-delete">Delete - DELETE</a></li>
+</ul></li>
+<li><a href="#join">JOIN</a></li>
+<li><a href="#query-operators">Query Operators</a></li>
+<li><a href="#distinct">DISTINCT</a></li>
+<li><a href="#order-by">ORDER BY</a>
+<ul>
+<li><a href="#asc">ASC</a></li>
+<li><a href="#desc">DESC</a></li>
+<li><a href="#multiple-orders">Multiple Orders</a></li>
+<li><a href="#examples">Examples:</a>
+<ul>
+<li><a href="#using-group-functions">Using Group Functions</a></li>
+<li><a href="#having-support">Having support</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+
+        
+        <div id="body-inner">
+          
+            <h1>Query Statements</h1>
+          
+
+        
+
+
+
+
+<h3 id="filter-where">Filter (WHERE)</h3>
+
+<pre><code>GET /DATABASE/SCHEMA/TABLE?FIELD=$eq.VALUE
+</code></pre>
+
+<p>Query Operators:</p>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>$eq</td>
+<td>Matches values that are equal to a specified value.</td>
+</tr>
+
+<tr>
+<td>$gt</td>
+<td>Matches values that are greater than a specified value.</td>
+</tr>
+
+<tr>
+<td>$gte</td>
+<td>Matches values that are greater than or equal to a specified value.</td>
+</tr>
+
+<tr>
+<td>$lt</td>
+<td>Matches values that are less than a specified value.</td>
+</tr>
+
+<tr>
+<td>$lte</td>
+<td>Matches values that are less than or equal to a specified value.</td>
+</tr>
+
+<tr>
+<td>$ne</td>
+<td>Matches all values that are not equal to a specified value.</td>
+</tr>
+
+<tr>
+<td>$in</td>
+<td>Matches any of the values specified in an array.</td>
+</tr>
+
+<tr>
+<td>$nin</td>
+<td>Matches none of the values specified in an array.</td>
+</tr>
+
+<tr>
+<td>$null</td>
+<td>Matches if field is null.</td>
+</tr>
+
+<tr>
+<td>$notnull</td>
+<td>Matches if field is not null.</td>
+</tr>
+
+<tr>
+<td>$true</td>
+<td>Matches if field is true.</td>
+</tr>
+
+<tr>
+<td>$nottrue</td>
+<td>Matches if field is not true.</td>
+</tr>
+
+<tr>
+<td>$false</td>
+<td>Matches if field is false.</td>
+</tr>
+
+<tr>
+<td>$notfalse</td>
+<td>Matches if field is not false.</td>
+</tr>
+
+<tr>
+<td>$like</td>
+<td>Matches always cover the entire string.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="filter-where-with-jsonb-field">Filter (WHERE) with JSONb field</h3>
+
+<pre><code>http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE?FIELD-&gt;&gt;JSONFIELD:jsonb=VALUE (filter)
+</code></pre>
+
+<h3 id="select-get">Select - GET</h3>
+
+<pre><code>http://127.0.0.1:8000/databases (show all databases)
+http://127.0.0.1:8000/databases?_count=* (count all databases)
+http://127.0.0.1:8000/databases?_renderer=xml (JSON by default)
+http://127.0.0.1:8000/schemas (show all schemas)
+http://127.0.0.1:8000/schemas?_count=* (count all schemas)
+http://127.0.0.1:8000/schemas?_renderer=xml (JSON by default)
+http://127.0.0.1:8000/tables (show all tables)
+http://127.0.0.1:8000/tables?_renderer=xml (JSON by default)
+http://127.0.0.1:8000/DATABASE/SCHEMA (show all tables, find by schema)
+http://127.0.0.1:8000/DATABASE/SCHEMA?_renderer=xml (JSON by default)
+http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE (show all rows, find by database and table)
+http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE?_select=column (select statement by columns)
+http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE?_select=column[array id] (select statement by array colum)
+
+http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE?_select=* (select all from TABLE)
+http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE?_count=* (use count function)
+http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE?_count=column (use count function)
+http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE?_page=2&amp;_page_size=10 (pagination, page_size 10 by default)
+http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE?FIELD=VALUE (filter)
+http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE?_renderer=xml (JSON by default)
+
+
+Select operations over a VIEW
+http://127.0.0.1:8000/DATABASE/SCHEMA/VIEW?_select=column (select statement by columns in VIEW)
+http://127.0.0.1:8000/DATABASE/SCHEMA/VIEW?_select=* (select all from VIEW)
+http://127.0.0.1:8000/DATABASE/SCHEMA/VIEW?_count=* (use count function)
+http://127.0.0.1:8000/DATABASE/SCHEMA/VIEW?_count=column (use count function)
+http://127.0.0.1:8000/DATABASE/SCHEMA/VIEW?_page=2&amp;_page_size=10 (pagination, page_size 10 by default)
+http://127.0.0.1:8000/DATABASE/SCHEMA/VIEW?FIELD=VALUE (filter)
+http://127.0.0.1:8000/DATABASE/SCHEMA/VIEW?_renderer=xml (JSON by default)
+
+</code></pre>
+
+<h3 id="insert-post">Insert - POST</h3>
+
+<pre><code>http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE
+</code></pre>
+
+<p>JSON DATA:</p>
+
+<pre><code>{
+    &quot;FIELD1&quot;: &quot;string value&quot;,
+    &quot;FIELD2&quot;: 1234567890
+}
+</code></pre>
+
+<h3 id="update-patch-put">Update - PATCH/PUT</h3>
+
+<p>Using query string to make filter (WHERE), example:</p>
+
+<pre><code>http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE?FIELD1=xyz
+</code></pre>
+
+<p>JSON DATA:</p>
+
+<pre><code>{
+    &quot;FIELD1&quot;: &quot;string value&quot;,
+    &quot;FIELD2&quot;: 1234567890,
+    &quot;ARRAYFIELD&quot;: [&quot;value 1&quot;,&quot;value 2&quot;]
+}
+</code></pre>
+
+<h3 id="delete-delete">Delete - DELETE</h3>
+
+<p>Using query string to make filter (WHERE), example:</p>
+
+<pre><code>http://127.0.0.1:8000/DATABASE/SCHEMA/TABLE?FIELD1=xyz
+</code></pre>
+
+<h2 id="join">JOIN</h2>
+
+<pre><code>/DATABASE/SCHEMA/Table?_join=Type:Table2:Table.field:Operator:Table2.field
+</code></pre>
+
+<p>Parameters:</p>
+
+<ol>
+<li>Type (INNER, LEFT, RIGHT, OUTER)</li>
+<li>Table2</li>
+<li>Table.field</li>
+<li>Operator ($eq, $lt, $gt, $lte, $gte)</li>
+<li>Table2.field</li>
+</ol>
+
+<p>Using query string to JOIN tables, example:</p>
+
+<pre><code>/DATABASE/SCHEMA/friends?_join=inner:users:friends.userid:$eq:users.id
+</code></pre>
+
+<h2 id="query-operators">Query Operators</h2>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>$eq</td>
+<td>Matches values that are equal to a specified value.</td>
+</tr>
+
+<tr>
+<td>$gt</td>
+<td>Matches values that are greater than a specified value.</td>
+</tr>
+
+<tr>
+<td>$gte</td>
+<td>Matches values that are greater than or equal to a specified value.</td>
+</tr>
+
+<tr>
+<td>$lt</td>
+<td>Matches values that are less than a specified value.</td>
+</tr>
+
+<tr>
+<td>$lte</td>
+<td>Matches values that are less than or equal to a specified value.</td>
+</tr>
+
+<tr>
+<td>$ne</td>
+<td>Matches all values that are not equal to a specified value.</td>
+</tr>
+
+<tr>
+<td>$in</td>
+<td>Matches any of the values specified in an array.</td>
+</tr>
+
+<tr>
+<td>$nin</td>
+<td>Matches none of the values specified in an array.</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="distinct">DISTINCT</h2>
+
+<p>To use <em>DISTINCT</em> clause with SELECT, follow this syntax <code>_distinct=true</code>.</p>
+
+<p>Examples:</p>
+
+<pre><code>    GET /DATABASE/SCHEMA/TABLE/?_distinct=true
+</code></pre>
+
+<h2 id="order-by">ORDER BY</h2>
+
+<p>Using <em>ORDER BY</em> in queries you must pass in <em>GET</em> request the attribute <code>_order</code> with fieldname(s) as value. For <em>DESC</em> order, use the prefix <code>-</code>. For <em>multiple</em> orders, the fields are separated by comma.</p>
+
+<p>Examples:</p>
+
+<h3 id="asc">ASC</h3>
+
+<pre><code>GET /DATABASE/SCHEMA/TABLE/?_order=fieldname
+</code></pre>
+
+<h3 id="desc">DESC</h3>
+
+<pre><code>GET /DATABASE/SCHEMA/TABLE/?_order=-fieldname
+</code></pre>
+
+<h3 id="multiple-orders">Multiple Orders</h3>
+
+<pre><code>GET /DATABASE/SCHEMA/TABLE/?_order=fieldname01,-fieldname02,fieldname03
+
+## GROUP BY
+</code></pre>
+
+<p>We support this Group Functions:</p>
+
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>Use in request</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>SUM</td>
+<td>sum:field</td>
+</tr>
+
+<tr>
+<td>AVG</td>
+<td>avg:field</td>
+</tr>
+
+<tr>
+<td>MAX</td>
+<td>max:field</td>
+</tr>
+
+<tr>
+<td>MIN</td>
+<td>min:field</td>
+</tr>
+
+<tr>
+<td>MEDIAN</td>
+<td>median:field</td>
+</tr>
+
+<tr>
+<td>STDDEV</td>
+<td>stddev:field</td>
+</tr>
+
+<tr>
+<td>VARIANCE</td>
+<td>variance:field</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="examples">Examples:</h3>
+
+<pre><code>GET /DATABASE/SCHEMA/TABLE/?_select=fieldname00,fieldname01&amp;_groupby=fieldname01
+</code></pre>
+
+<h4 id="using-group-functions">Using Group Functions</h4>
+
+<pre><code>GET /DATABASE/SCHEMA/TABLE/?_select=fieldname00,sum:fieldname01&amp;_groupby=fieldname01
+</code></pre>
+
+<h4 id="having-support">Having support</h4>
+
+<p>To use Having clause with <strong>Group By</strong>, follow this syntax:</p>
+
+<pre><code>_groupby=fieldname-&gt;&gt;having:GROUPFUNC:FIELDNAME:CONDITION:VALUE-CONDITION
+</code></pre>
+
+<p>Example:</p>
+
+<pre><code>GET /DATABASE/SCHEMA/TABLE/?_select=fieldname00,sum:fieldname01&amp;_groupby=fieldname01-&gt;&gt;having:sum:fieldname01:$gt:500
+</code></pre>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+        
+            <a class="nav nav-prev" href="/configurations/" title="Configurations"> <i class="fa fa-chevron-left"></i></a>
+        
+        
+            <a class="nav nav-next" href="/permissions/" title="Permissions" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1525187370"></script>
+    <script src="/js/perfect-scrollbar.min.js?1525187370"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1525187370"></script>
+    <script src="/js/jquery.sticky.js?1525187370"></script>
+    <script src="/js/featherlight.min.js?1525187370"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1525187370"></script>
+    <script src="/js/highlight.pack.js?1525187370"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom.71422.js?1525187370"></script>
+    <script src="/js/learn.js?1525187370"></script>
+    <script src="/js/hugo-learn.js?1525187370"></script>
+
+    <link href="/mermaid/mermaid.css?1525187370" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1525187370"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>

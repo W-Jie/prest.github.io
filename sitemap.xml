@@ -43,6 +43,11 @@
   </url>
   
   <url>
+    <loc>https://postgres.rest/batch-operations/</loc>
+    <lastmod>2018-05-14T12:00:00-03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://postgres.rest/permissions/</loc>
     <lastmod>2017-08-30T19:06:32-03:00</lastmod>
   </url>

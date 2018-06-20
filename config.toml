@@ -38,5 +38,10 @@ show_powered_by = true
 [Languages]
 [Languages.en]
 title = "Documentation for pREST"
-weight = 1
+weight = 2
 languageName = "English"
+
+[Languages.cn]
+title = "pREST 文档"
+weight = 1
+languageName = "简体中文"
